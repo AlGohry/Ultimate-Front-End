@@ -1,4 +1,7 @@
-body {}
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
 
 .page {
     min-height: 100vh;
@@ -8,5 +11,8 @@ body {}
         transition: 0.3s;
         float: right;
         will-change: width;
+        &.no-sidebar {
+            width: 100%;
+        }
     }
 }
