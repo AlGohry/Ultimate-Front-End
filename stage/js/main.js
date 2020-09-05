@@ -3,4 +3,14 @@ $(function() {
     $('.toggle-sidebar').on("click", function() {
         $(".conent-area,.sidebar").toggleClass("no-sidebar");
     });
+
+    // Toggle SubMenu
+    $(".toggle-submenu").on("click", function() {
+        $(this)
+            .find("fa-angle-right")
+            .toggleClass("down");
+        $(this)
+            .next(".child-links")
+            .slideToggle();
+    });
 });
