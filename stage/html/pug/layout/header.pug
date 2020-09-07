@@ -1,7 +1,7 @@
 .header 
-    i.fa.fa-exchange-alt.fa-lg.toggle-sidebar  
+    i.fa.fa-exchange-alt.fa-lg.header-icon.toggle-sidebar  
     .dropdown.notification-container
-        i.fa.fa-bell.fa-lg.toggle-notifi#notifications( data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+        i.fa.fa-bell.fa-lg.header-icon.toggle-notifi#notifications( data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
         .dropdown-menu(aria-labelledby='notifications')
             .notifi-head
                 | Notifications
@@ -21,3 +21,4 @@
                         i.fa.fa-envelope.fa-lg
                         | You Get Email From 
             .notifi-footer.text-center: a(href="#") View all Notifications
+    i.fa.fa-expand-arrows-alt.fa-lg.header-icon.toggle-fullscreen
