@@ -22,3 +22,32 @@
                         | You Get Email From 
             .notifi-footer.text-center: a(href="#") View all Notifications
     i.fa.fa-expand-arrows-alt.fa-lg.header-icon.toggle-fullscreen
+    .dropdown.usermenu-container
+        .username#username( data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+            img.avatar(src="img/user_profile.svg", alt="Profile User")
+            span.user ALGOHRY
+            i.fa.fa-angle-down.fa-lg
+        .dropdown-menu.dropdown-menu-right(aria-labelledby='usermenu')
+            .user-info
+                h3 AHMED ALGOHRY 
+                p.text-muted Premium Mempber
+            hr
+            ul.activities-list.list-unstyled
+                li Added Comment on Post 
+                li Created Post " Category "
+                li Created Charts 
+                li Added Comment on Post 
+            hr
+            .row.user-links
+                .col 
+                    .link-box: a(href="#")
+                        i.fa.fa-cogs.fa-fw
+                        span Settings
+                .col 
+                    .link-box: a(href="#")
+                        i.fa.fa-user-friends.fa-fw
+                        span Profile
+                .col 
+                    .link-box: a(href="#")
+                        i.fa.fa-power-off.fa-fw
+                        span Sign Out
