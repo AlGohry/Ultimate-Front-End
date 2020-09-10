@@ -22,6 +22,7 @@ $(function() {
             closeFullscreen();
         }
     });
+
     // Toggle Setting 
     $(".toggle-settings").on("click", function() {
         $(this)
@@ -30,6 +31,18 @@ $(function() {
         $(this)
             .parent()
             .toggleClass("hide-settings");
+    });
+
+    // Switch Colors Theme
+    var themeClasses = [];
+    $(".color-options li").each(function() {
+        themeClasses.push($(this).data("theme"));
+    });
+    $(".color-options li").on("click", function() {
+        $(this).addClass('active').siblings().removeClass('active');
+        $('body')
+            .removeClass(themeClasses.join(" "))
+            .addClass($(this).data("theme"));
     });
 
 });
