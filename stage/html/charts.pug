@@ -1,23 +1,16 @@
-- var pageTitle = 'HomePage';
+- var pageTitle = 'Charts';
 <!DOCTYPE html>
 html(lang="en")
     head
-        // Start of Meta Tag Head
         include pug/layout/meta
-        // Start of Styles Head
         include pug/layout/styles
     body
         .page.home-page
-            // Start Setting Box
             include pug/comp/settings-box
-            // Start SideBar
             include pug/layout/sidebar 
-            // Start Conent Page
             .conent-area
-                // Start Conent Page : Header
                 include pug/layout/header
                 .container-fluid
                     .content
                     include pug/comp/page-head
-        // Start Scripts 
         include pug/layout/scripts 
