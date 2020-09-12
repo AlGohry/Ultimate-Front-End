@@ -2,8 +2,18 @@ $themes:( green-theme:( color:#27ae60), blue-theme:( color:#2980b9), red-theme:(
 @each $theme,
 $map in $themes {
     .#{$theme} {
+        $color: map-get($map, color);
         .page .page-head .page-title {
-            color: map-get($map, color);
+            color: $color;
+        }
+        .header .header-icon:hover {
+            color: $color;
+        }
+        .header .usermenu-container .dropdown-menu .user-info h3 {
+            color: $color;
+        }
+        .header .usermenu-container .username .user {
+            color: $color;
         }
     }
 }
